@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(244, 203, 210);
+}
+h1{
+    color: darkred; 
+}
+h2{
+    color: firebrick;
+}
+h3{
+    color: red; 
+}
+h4{
+    color: indianred; 
+}
+h5{
+    color: lightcoral; 
+}
+h6{
+    color: salmon
+}
+table,th, td {
+    border: 1px solid black; 
+}
+th{
+    background-color: lightblue;
+}
+td{
+    background-color: plum;
+}
+
+

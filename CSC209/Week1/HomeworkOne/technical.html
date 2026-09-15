@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <Title> Homework One Technical</Title>
+        <link rel="stylesheet" href="cssSheets/technicalStyle.css"> 
+    </head>
+    <body>
+        <h1> Homework One Technical </h1>
+        <hr> 
+        <h2> Headings</h2>
+        <p> Below you can find examples of the six different types of headings auto-avalible in html. The colors were set using a CSS sheet.</p>
+        <h1> Heading One </h1>
+        <h2> Heading Two </h2>
+        <h3> Heading Three</h3>
+        <h4> Heading Four</h4>
+        <h5> Heading Five</h5>
+        <h6> Heading Six</h6>
+        <p> You can also manually adjust the size and colors of the headings. Some examples are shown below. </p>
+        <h1 style="font-size:60px; color:blue;"> This heading is 60 px and Blue</h1>
+        <h2 style="font-size: 40px; color: yellow;"> This heading is 40px and Yellow</h2> 
+        <h3 style="font-size:20px; color:darkgreen;"> This heading is 20px and dark green!</h3>
+        <hr> 
+        <h2> Paragraphs</h2>
+        <p style="font-size:20px; font-family:courier"> This is a paragraph. It has been set to a 20px font. It has also been set to a courier font. However you can change these manually too! Other examples are shown below! This is a standardly formatted paragraph with no line breaks or special formatting. </p>
+        <p style="font-size: 15px; font-family:Times New Roman; color: brown;" > This is a paragraph that has 15px font, times new roman font, and is in a brown color. <br> In this paragraph i am using the br command to break up every scentence onto a different line. <br> This is one of the ways to format paragraphs in html.</p>
+        <pre style="font-size: 18px; font-family:Arial; color: mediumpurple;"> 
+This paragraph is 18px arial font in medium purple
+    It was formatted using the pre tag which allows u to control how the text looks without using line breaks. 
+        This would be useful for poems or other instances where formatting is very important. 
+        </pre>
+        <hr> 
+        <h2> Lists </h2>
+        <p> There are several different types of lists in html. Shown below first is an ordered list of my top ten listened to songs from last year! </p>
+        <ol> 
+            <li> Leave me alone by Renee Rapp</li>
+            <li> Sports Car by Tate McRae</li>
+            <li> Ankles by Lucy Dacus</li>
+            <li> Alien Superstar by Beyonce </li>
+            <li> Miss Possessive by Tate McRae </li>
+            <li> Revolving Door by Tate McRae </li>
+            <li> Denial is a River by Doechii </li>
+            <li> Rush by Troye Sivan</li>
+            <li> Cozy by Beyonce</li>
+            <li> Talk by Lucy Dacus </li>
+        </ol>
+
+        <p> You can also do unordered lists! Here are some of the songs i've been listening to latley in an unordered list!</p>
+        <ul> 
+            <li> Chinese Satellite by Phoebe Bridgers </li>
+            <li> No Thank You, I Love You, Goodbye by Lucy Dacus</li>
+            <li> Cigarette Smoke by Olivia Rodrigo</li> 
+            <li> We'll Never Have Sex </li>
+            <li> Wink Wink by Charli XCX </li>
+            <li> Crush by Ethel Cain</li>
+            <li> Halloween by Phoebe Bridgers </li>
+        </ul>
+
+        <p> You can also add lists with bonus info! Here is a list of Phoebe Bridgers Albums!</p>
+        <dl> 
+            <dt>Lost Weekend</dt>
+            <dd>This album is her most recent released this year (2026)!</dd>
+            <dt> Punisher</dt>
+            <dd> This is her most popular album! Released in 2020!</dd>
+            <dt> Stranger in the Alps</dt>
+            <dd> This was her first full length album! It was released in 2017!</dd>
+        </dl>
+        <hr> 
+
+        <h2> Tables </h2>
+        <p> Below is an example of the most basic table in html with some homework information inside! It is styled with CSS.</p>
+        <table> 
+            <tr> 
+                <td> Classes: </td>
+                <td> CSC 209</td>
+                <td> CSC 231</td>
+                <td> PSY 261 </td>
+                <td> KOR 101</td>
+            </tr>
+            <tr> 
+                <td> Monday</td>
+                <td> Hw 1 Due</td>
+                <td> n/a</td>
+                <td> n/a </td>
+                <td> n/a </td>
+            </tr>
+            <tr>
+                <td> Tuesday </td>
+                <td> n/a </td>
+                <td> n/a </td>
+                <td> Reading Due</td>
+                <td> Workbook Assignment Due</td>
+            </tr>
+
+        </table>
+        <p> However this can be kind of difficult to read so below is the same table with slightly better formatting using table headers and CSS styling.</p>
+        <table> 
+            <caption> Kylie's homework for the first two day's of this week! </caption>
+            <tr> 
+                <th> Classes: </td>
+                <th> CSC 209</td>
+                <th> CSC 231</td>
+                <th> PSY 261 </td>
+                <th> KOR 101</td>
+            </tr>
+            <tr> 
+                <th> Monday</td>
+                <td> Hw 1 Due</td>
+                <td> n/a</td>
+                <td> n/a </td>
+                <td> n/a </td>
+            </tr>
+            <tr>
+                <th> Tuesday </td>
+                <td> n/a </td>
+                <td> n/a </td>
+                <td> Reading Due</td>
+                <td> Workbook Assignment Due</td>
+            </tr>
+
+        </table>
+    <hr> 
+    <h2> Images </h2> 
+    <p>You can link images in two different ways in html. The first image below is using an absolute file path to an image of Phoebe Bridgers' Album. The second image is an relative file path which links to an image of my dogs, Cash and Gunner. </p>
+    <img src="https://images.genius.com/7d6f5768e790d1546e5ba429594dbdd0.544x544x1.png" alt="Lost Weekend Album Cover"> 
+    <img src="../Tutorials/imgs/dogs.jpg" alt="Kylie's Dogs"> 
+    <p> You can also control the scale and sizing of different images.Below are several variations of another photo of my dogs. </p>
+    <img src="Imgs/gunCash.jpeg" alt="Second Photo of Kylie's Dogs" style="width:50px;height:50px;"> 
+    <img src="Imgs/gunCash.jpeg" alt="Second Photo of Kylie's Dogs" style="width:160px;height:200px;"> 
+    <img src="Imgs/gunCash.jpeg" alt="Second Photo of Kylie's Dogs" style="width:250px;height: 150px;"> 
+    <hr> 
+    <h2> Links</h2>
+    <p> You can link to other websites in HTML. Below are some links to w3 tutorials I used!</p>
+    <a href="https://www.w3schools.com/html/html_images.asp"> Image Tutorial</a>
+    <a href="https://www.w3schools.com/html/html_links.asp"> Link Tutorial</a>
+    <p> You can also link to other files! Here are the links to very rough html files I created while doing the tutorials! </p>
+    <a href="../Tutorials/tutorialLinks.html"> Link Tutorial</a>
+    <a href="../Tutorials/tutorialHeadings.html"> Headings Tutorial</a>
+    <hr> 
+    </body>
+</html>

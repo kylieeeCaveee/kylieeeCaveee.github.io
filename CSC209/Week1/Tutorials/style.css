@@ -1,0 +1,12 @@
+body {
+    background-color: purple; 
+}
+h1{
+    color: white; 
+    font-family:'Franklin Gothic Medium'; 
+    font-size: 200%; 
+    margin-left: 50px;
+    border: 4px, solid pink; 
+    padding: 10px; 
+    margin: 30px; 
+}

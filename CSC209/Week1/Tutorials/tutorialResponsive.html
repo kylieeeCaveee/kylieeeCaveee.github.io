@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> Responsive Practice</title>
+        <style>
+            body{background-color: rgb(111, 35, 147);}
+            h1 {color: rgb(174, 224, 235);}
+            h2{color: rgb(246, 195, 242);}
+        </style>
+   
+        <meta name="viewport" content="width=device-width, intial-scale 1.0">
+       <!-- makes it so that it fits the device with and sets the scale to 1 automatically -->
+    <body> 
+        <img src="imgs/dogs.jpg" style="width:100%;">
+        <!-- image can be scaled to larger than og size above-->
+        <img src="img/dogs.jpg" style="max-width:100%; height:auto;">
+        <!-- image will scale down if it needs to be never bigger than og size -->
+        <picture>
+            <source srcset="imgs/dogs.jpg" media="(max-width: 600 px)">
+            <source srcset="imgs/julien.jpg" media="(max-width: 15000px)">
+            <source srcset="kyliesFavs.jpg">
+            <img src="imgs/dogs.jpg" alt="things kylie likes">
+        </picture>
+    </body>
+</html>
