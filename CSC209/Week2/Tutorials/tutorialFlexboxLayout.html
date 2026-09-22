@@ -1,0 +1,116 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title> tutorial Flexbox Layout</title>
+        <style> 
+            *{
+                box-sizing:border-box; 
+            }
+            
+            body{
+                font-family: Arial, Helvetica, sans-serif; 
+            }
+            /*style the header*/
+            header{
+                background-color: #bcadf4; 
+                padding: 30px; 
+                text-align: center; 
+                font-size: 35px; 
+                color: rgb(130, 67, 130); 
+            }
+
+            /*Container for flexboxes*/
+            section{
+                display: flex; 
+                flex-direction: column; 
+            }
+            /*creating two columns/boxes that float next to each other*/
+            nav{
+                flex: 1; 
+                background: #e983b9; 
+                padding: 20px; 
+            }
+
+            nav ul{
+                list-style-type: none;
+                padding:0; 
+            }
+
+            article{
+                flex: 3; 
+                background-color: rgb(173, 216, 242); 
+                padding: 10px; 
+            }
+
+            /*Style the footer*/
+            footer{
+                background-color: rgb(241, 241, 165);
+                padding: 10px; 
+                text-align: center;
+                color: rgb(169, 169, 13); 
+            }
+        </style>
+    </head>
+    <body>
+        <header> 
+            <h2> Header</h2>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li> <a href="#sectionOne"> Section One</a></li>
+                    <li> <a href="#sectionTwo"> Section Two</a></li>
+                    <li> <a href= "#sectionThree"> Section Three</a></li>
+                </ul>
+            </nav>
+
+            <article id="sectionOne"> 
+                <h1>Section One</h1>
+                <pre>
+                    This is the stuff for section One
+
+
+
+
+
+
+                </pre>
+            </article>
+            <article id="sectionTwo">
+                <h1> Section Two</h1>
+                <pre>
+                    This is the stuff for section two
+
+
+
+
+
+
+
+
+
+                </pre>
+
+            </article>
+            <article id="sectionThree">
+                <h1> Section Three</h1>
+                <pre>
+                    This is the stuff for section three.
+
+
+
+                    
+                    
+
+    
+
+                </pre>
+            </article>
+
+            </section>
+        <footer> 
+            <p> footer </p>
+        </footer>
+    </body>
+</html>

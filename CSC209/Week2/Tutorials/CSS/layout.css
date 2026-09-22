@@ -1,0 +1,31 @@
+header{
+    background-color: rgb(159, 210, 243); 
+    padding: 10px;
+    text-align: center; 
+    color: rgb(91, 91, 208);
+}
+ ul.topnav{
+    display: flex; 
+    list-style-type: none; 
+    margin:0; 
+    padding:0; 
+    background-color: blue; 
+}
+
+ul.topnav li a{
+    display: block; 
+    background-color: rgb(53, 53, 112); 
+    color: white;
+    padding: 14px 16px;
+    
+}
+
+ul.topnav li a:hover {
+    background-color: rgb(151, 80, 153);
+    color: white; 
+
+}
+footer{
+    
+}
+

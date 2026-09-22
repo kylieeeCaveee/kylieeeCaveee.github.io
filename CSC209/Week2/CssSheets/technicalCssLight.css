@@ -1,0 +1,79 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+}
+body{
+    background-color: plum;
+}
+header{
+    background-color: rgb(147, 82, 147);
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+
+.tableSection{
+    flex:3; 
+    background-color: plum;
+    padding: 30px; 
+    margin: 30px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul.topnav{
+    display: flex;
+    list-style-type: none;
+    flex: 1; 
+    background: pink; 
+    padding:10px; 
+    justify-content: center;
+    
+}
+ul.topnav li a{
+    display: block;
+    background-color: pink; 
+    color: rgb(147, 82, 147);
+    padding: 20px; 
+}
+
+ul.topnav li a:hover{
+    background-color: rgb(228, 117, 135); 
+}
+
+th{
+    font-weight: bold; 
+    background-color: rgb(237, 202, 208);
+    font-size: 110%; 
+}
+table,th, td{
+    border: 3px solid rgb(168, 69, 85); 
+    border-collapse: collapse; 
+}
+th, td{
+    padding: 5px; 
+}
+.center{
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+
+footer{
+    background-color: rgb(147, 82, 147);
+    text-align: center; 
+    padding: 10px; 
+}
+button{
+    display:block; 
+    background-color: rgb(245, 207, 213);
+    border-radius: 8px; 
+}
+
+ul.regularList{
+    list-style-type: circle;
+    padding: 40px; 
+}

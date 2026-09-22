@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JavaScript Tutorial</title>
+    </head>
+    <body> 
+        <h1>Example One</h1>
+        <p> this example writes hello javascript into an element.</p>
+        <p id="demo">This won't be shown.</p>
+        <script>
+            document.getElementById("demo").innerHTML= "Hello JavaScript!"; 
+            document.getElementById("demo").style.fontSize="25px"; 
+            document.getElementById("demo").style.color="red"; 
+            document.getElementById("demo").style.backgroundColor="pink"; 
+        </script>
+
+        <!-- Java with images-->
+        <h2> Example Two</h2>
+        <P> this example uses javascript to change the images between each other and also uses buttons.</P>
+        <img id="dogPicture" src="Imgs/cash.JPG"  width="100" height="180">
+        <script>
+            function switchDog(x){
+                var pic; 
+                if (x==0){
+                    pic= "Imgs/cash.JPG"; 
+                }else{
+                    pic= "Imgs/ollie.JPG"; 
+                }
+                document.getElementById("dogPicture").src=pic; 
+            }
+        </script>
+        <!--Use no script when a browser doesn't allow for scripts -->
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+        <p> 
+            <button type="button" onclick="switchDog(0)">Cash</button>
+            <button type="button" onclick="switchDog(1)">Ollie</button>
+        </p>
+
+
+
+
+    </body>
+</html>

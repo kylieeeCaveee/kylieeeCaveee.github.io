@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    background-color: orange
+}
+header{
+    background-color: rgb(255, 94, 0);
+    text-align: center; 
+    color: white; 
+    font-style: bold; 
+    padding: 20px; 
+}
+ul.topnav{
+    display: flex;
+    list-style-type: none;
+    flex: 1; 
+    background: rgb(251, 122, 67); 
+    padding:10px; 
+    justify-content: center;
+    
+}
+ul.topnav li a{
+    display: block;
+    background-color: rgb(251, 122, 67); 
+    color: rgb(190, 31, 2);
+    padding: 20px; 
+}
+
+ul.topnav li a:hover{
+    background-color:rgb(249, 162, 124) ; 
+}
+section.imageDisplay{
+    display:flex; 
+    flex-direction: column;
+    background-color: rgb(240, 198, 115);
+    align-items: center;
+    
+}
+section.imageDisplay img{
+    position: absolute;
+    border-width: 6px;
+    border-color: rgb(240, 204, 132);
+    border-style: solid;
+}
+#head{
+    top: 170px;
+}
+#shirt{
+    top: 330px;
+    
+}
+#pants{
+    top: 480px;
+}
+
+
+section.buttonMenu{
+    display: flex;
+    flex-direction: row; 
+    background-color: rgb(242, 147, 92);
+    justify-content: center;
+    
+}
+section.buttonMenu button{
+    background-color:rgb(240, 221, 157);
+    padding: 10px; 
+    border-radius: 12px;
+    font-size: 16px;
+    border: solid;
+    border-color: white; 
+}
+section.buttonPanelOne{
+    background-color: rgb(242, 147, 92);
+    text-align: center;
+    color: white; 
+    padding: 20px; 
+}
+section.buttonPanelTwo{
+    background-color: rgb(240, 110, 35);
+    text-align: center;
+    color: white; 
+    padding: 20px; 
+}
+footer{
+    background-color: rgb(255, 94, 0);
+    text-align: center;
+    padding: 10px;
+}
