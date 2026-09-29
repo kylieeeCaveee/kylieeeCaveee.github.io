@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Practice</title>
+
+    </head>
+    <body>
+        <!--JavaScript Hiding HTML Elements-->
+        <h2>What Can JavaScript Do?</h2>
+        <p id="demo1">JavaScript can hide HTML elements.</p>
+        <button type="button" onclick="document.getElementById('demo1').style.display='none'">Click Me!</button>
+
+
+        <!--JavaScript Showing HTML Elements-->
+        <p>JavaScript can show hidden HTML elements.</p>
+        <p id="demo2" style="display:none">Hello JavaScript!</p>
+        <button type="button" onclick="document.getElementById('demo2').style.display='block'">Click Me!</button>
+
+        <!--JavaScript changing innerText-->
+        <p>My First Paragraph</p>
+
+        <p id="demo"></p>
+
+        <script>
+        document.getElementById("demo").innerText = "Hello World";
+        </script>
+
+        <!--Using Javascript to write-->
+        <p>Never call document.write after the document has finished loading.
+        It will overwrite the whole document.</p>
+
+        <script>
+        document.write(5 + 6);
+        </script>
+
+        <!--Using an alert box to display data-->
+        <button type="button" onclick="window.alert(5+6)">Alert</button>
+
+        <!--Using Java to log to console-->
+        <script>
+        console.log(5 + 6);
+        </script>
+
+        <!--Javascript Print-->
+        <button onclick="window.print()">Print this page</button>
+
+        <!--JavaScript Object Example-->
+        <script>
+            const person = {firstName:"John", lastName:"Doe"};
+        </script>
+
+        <!--To do exponentiation in java script use **-->
+        <!--Java Script String Addition-->
+        <script>
+            let text1 = "John";
+            let text2 = "Doe";
+            let text3 = text1 + " " + text2;
+        </script>
+
+        <!--"!==" means not equal value or not equal type aka "5" and 5 would return false -->
+
+        <!-- Logical And/or Assignemnt and ??= -->
+        <script>
+            //If the first value is true, the second value is assigned.
+            let x = true;
+            let y = x &&= 10;
+            //If the first value is false, the second value is assigned.
+            let z = false;
+            let a = z ||= 10;
+            //If the first value is undefined or null, the second value is assigned
+            let b;
+            b ??= 10;
+
+        </script>
+
+        <!--JavaScript Switch-->
+        <script>
+            /*This is how it works:
+
+            The switch expression is evaluated once.
+            The value of the expression is compared with the values of each case.
+            If there is a match, the associated block of code is executed.
+            If there is no match, no code is executed.*/
+            switch (new Date().getDay()) {
+                case 0:
+                    day = "Sunday";
+                    break;
+                case 1:
+                    day = "Monday";
+                    break;
+                case 2:
+                    day = "Tuesday";
+                    break;
+                case 3:
+                    day = "Wednesday";
+                    break;
+                case 4:
+                    day = "Thursday";
+                    break;
+                case 5:
+                    day = "Friday";
+                    break;
+                default:
+                    day = "Saturday";
+            }
+            /*If multiple cases matches a case value, the first case is selected.
+
+            If no matching cases are found, the program continues to the default label.
+
+            If no default label is found, the program continues to the statement(s) after the switch*/
+
+        </script>
+
+    
+        <!--JavaScript Ternary Operator-->
+        <script>
+            let text = (age < 18) ? "Minor" : "Adult";
+            //If the value of age is < 18, set the value of text to "Minor", otherwise to "Adult":
+        </script>
+
+        <!--Do While Loop-->
+        <script>
+            do {
+                text += "The number is " + i;
+                i++;
+                }
+            while (i < 10);
+            /*The do while runs at least once, even if the condition is false from the start.
+
+            This is because the code block is executed before the condition is tested:*/
+        </script>
+
+        <!--Label name and Continue-->
+        <script>
+            let text4= "";
+
+            loop1: for (let j = 1; j < 5; j++) {
+                loop2: for (let i = 1; i < 5; i++) {
+                    if (i === 3) { continue loop1; }
+                    text2+= i;
+                }
+            }
+
+        </script>
+
+        <!--JavaScript Strings-->
+        <!--Template Strings-->
+        <script>
+            //Templates allow single and double quotes inside a string and multi string lines:
+            let text5= `He's often called "Johnny"`;
+            let text7=
+            `The quick
+            brown fox
+            jumps over
+            the lazy dog`;
+            //templates also allow for interpolation of variables and expressions
+            let firstName = "John";
+            let lastName = "Doe";
+
+            let text8= `Welcome ${firstName}, ${lastName}!`;
+
+            let price = 10;
+            let VAT = 0.25;
+            let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+        </script>
+
+        <!--Useful HTML Example-->
+        <p id="demoTemplate"></p>
+        <script>
+            let header = "Template Strings";
+            let tags = ["template strings", "javascript", "es6"];
+
+            let html = `<h2>${header}</h2><ul>`;
+            for (const x of tags) {
+                html += `<li>${x}</li>`;
+            }
+
+            html += `</ul>`;
+            document.getElementById("demoTemplate").innerHTML = html;
+        </script>
+
+        <!--Length-->
+        <script>
+            let text6= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            let length = text.length;
+        </script>
+        <!--match()-->
+        <script> 
+            //Perform a global, case-insensitive search for "ain":
+            let text9= "The rain in SPAIN stays mainly in the plain";
+            text.match(/ain/gi);
+            //WITHOUT THE G MOD IT WILL RETURN ONLY THE FIRST MATCH 
+            //i makes it case insensitive
+        </script>
+
+        <!--javascript numbers-->
+        <!--parse int>-->
+        <script>
+            //parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+        parseInt("-10");
+        parseInt("-10.33");
+        parseInt("10");
+        parseInt("10.33");
+        parseInt("10 20 30");
+        parseInt("10 years");
+        parseInt("years 10");
+        //output: -10 -10 10 10 10 10 NaN
+        </script>
+
+        <!--javascript functions-->
+        <!--arrow funcitons-->
+        <script>
+            //If the function body contains only one statement: You can remove the word function, the curly brackets and the return keyword
+            const multiply = (a, b) => a * b;
+            const square = x => x * x;
+            const hello = () => "Hello World!";
+        </script>
+
+        <!--javascript objects-->
+        <script>
+            // Create an Object
+            const personOne = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue",
+                //add method
+                fullName: function() {
+                    return this.firstName + " " + this.lastName;
+                }
+            };
+            //create an object and add properties later
+            const personTwo = {};
+
+            // Add Properties
+            personTwo.firstName = "John";
+            personTwo.lastName = "Doe";
+            personTwo.age = 50;
+            personTwo.eyeColor = "blue";
+            personOne.fullname(); 
+            //acess attributes with . or with brackets
+            delete personTwo.age;
+        </script>
+
+        <!--Javascript Arrays-->
+        <script>
+            //creating an arry
+            const carsOne = ["Saab", "Volvo", "BMW"];
+            const carsTwo= [];
+            carsTwo[0]= "Saab";
+            carsTwo[1]= "Volvo";
+            carsTwo[2]= "BMW";
+
+            //access array elements by indidces 
+            //get length
+            let lengthCar = carsTwo.length;
+
+            //add array elements 
+            const fruits = ["Banana", "Orange", "Apple"];
+            fruits.push("Lemon");  // Adds a new element (Lemon) to fruits
+            //or
+            fruits[fruits.length] = "Lime";  // Adds "Lime" to fruits
+        </script>
+    </body>
+</html>

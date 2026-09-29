@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Canvas Practice</title>
+       
+    </head>
+    <body>
+        <h1> Pracice with Graphics and Canvases</h1>
+        <canvas id="myCanvas" width="600" height="500" style="border:1px solid #00000;"></canvas>
+        <script>
+            var CANVAS= document.getElementById("myCanvas");
+            var CTX = CANVAS.getContext("2d");
+        </script>
+        <script src="canvasDemo.js"></script>
+        <script>
+            drawLine();
+            drawCircle(100,200,10);
+            drawCircle(300,250,10);
+            drawSquare(400,400,10,10);
+        </script>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,104 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background-color: rgb(119, 162, 119);
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: rgb(3, 43, 3);
+    color: white; 
+    text-align: center;
+    padding: 20px; 
+}
+#userInputSection{
+    font-size: 20px;
+    text-align: center;
+}
+#submitButton{
+    background-color: rgb(205, 239, 205);
+    padding: 5px; 
+    border-radius: 12px; 
+    border: 2px solid rgb(20, 39, 20);
+    margin: 5px;
+    color: rgb(20, 39, 20);
+}
+#readMoreButton{
+    background-color: rgb(205, 239, 205);
+    padding: 5px; 
+    border-radius: 12px; 
+    border: 2px solid rgb(20, 39, 20);
+    margin: 5px;
+    color: rgb(20, 39, 20);
+    font-size: 10px;
+}
+input{
+    padding:5px; 
+    margin: 5px; 
+    background-color:rgb(205, 239, 205);
+    border-radius: 12px; 
+    border: 2px solid rgb(20, 39, 20);
+    margin: 5px;
+
+}
+#songReveal{
+    display: flex; 
+    flex:1;
+
+}
+#boygeniusReveal{
+    flex:3;
+    width: 100%; 
+    background-color: rgb(142, 179, 142);
+    color: rgb(1, 32, 1);
+    text-align: center; 
+    padding: 50px;
+}
+#individualSongReveal{
+    text-align:center; 
+    flex:5;
+    display:flex; 
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    
+}
+#phoebeSection{
+    flex:2;
+    padding:50px; 
+    background-color:rgb(196, 232, 196);
+    color: rgb(1, 32, 1);
+}
+#julienSection{
+    flex:2;
+    padding:50px; 
+    background-color:rgb(196, 232, 196);
+    color: rgb(1, 32, 1);
+}
+#lucySection{
+    flex: 2;
+    padding:50px; 
+    background-color: rgb(139, 205, 139);
+    color: rgb(1, 32, 1);
+}
+footer{
+    background-color: rgb(212, 248, 219);
+    text-align: center; 
+    padding: 10px; 
+    
+}
+button{
+    padding:10px; 
+    background-color: rgb(2, 42, 2);
+    color:white;
+    border: 5px dotted rgb(205, 239, 205); 
+    font-size: 20px; 
+    border-radius: 12px; 
+
+}

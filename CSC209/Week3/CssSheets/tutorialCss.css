@@ -1,0 +1,33 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+    
+}
+header{
+    background-color:  rgb(4, 56, 8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+ul.topnav{
+    display:flex; 
+    background-color: rgb(5, 132, 33);
+    color:white; 
+    justify-content: center;
+}
+
+ul.topnav:hover{
+    background-color: rgb(168, 228, 156);
+    color: white; 
+}
+
+body{
+    background-color: rgb(197, 255, 192);
+}
+
+ul.regList{
+    list-style-type: none;
+    font-size: 30px;
+
+}

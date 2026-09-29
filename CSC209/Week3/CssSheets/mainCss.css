@@ -1,0 +1,26 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+    
+}
+header{
+    background-color: rgb(255, 149, 1);
+    padding: 20px;
+    text-align: center; 
+    color:  rgb(243, 231, 221);
+}
+section{
+    display: flex; 
+    
+}
+article{
+    flex: 3; 
+    background-color: rgb(252, 252, 46);
+    padding: 20px; 
+    color: rgb(247, 221, 143);
+
+}
+body{
+    background-color: rgb(252, 252, 46);
+}
