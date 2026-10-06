@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Responsive tutorial</title>
+        <!--Added below changes the viewport to make it scale with the device viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--Making an image get no bigger than its max size-->
+        <h3> Image no bigger than max size</h3>
+        <img src="Imgs/cash.jpg" style=" max-width:100%; height: auto;">
+        <h3> Different images depending on browser width</h3>
+        <picture>
+            <source srcset="Imgs/cash.jpg" media="(max-width:600px)">
+            <source srcset="Imgs/dogs.jpg" media="(max-width: 1500 px)">
+            <source srcset="Imgs/ollie.jpg">
+            <img src="Imgs/cash.jpg" alt="dogs">
+        </picture>
+        <h3>Responsive Text Size</h3>
+        <!--The vw makes it change with the viewport size-->
+        <h1 style="font-size:10vw">Hello World</h1>
+        
+    </body>
+</html>
