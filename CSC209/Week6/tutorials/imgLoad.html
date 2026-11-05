@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Events</h1>
+<h2>The load Event</h2>
+
+<img id="myImg"
+src="https://www.w3schools.com/images/w3schools_green.jpg" width="120">
+
+<p id="demo"></p>
+
+<script>
+const img = document.getElementById("myImg");
+
+// Add Event Listener to img
+img.addEventListener("load", function () {
+  document.getElementById("demo").innerHTML = "Image loaded!";
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Canvas Practice</title>
+        <script> 
+            const NUMPOINTS=6; 
+            const NUMEDGES=Math.floor(NUMPOINTS/2); 
+        </script>
+
+    </head>
+    <body>
+        <h1> Graph Drawing</h1>
+        <p> Please randomize point locations again if you wish to create new consecutive or random pairs! Addtionally, 
+            please re-click the Display Coords button after randomizing points to get accurate coordinates! 
+        </p>
+        <div id="pointDisplay"></div>
+        <div id="edgeDisplay"></div>
+        <canvas id="myCanvas" width="600" height="500" style="border:1px solid black"></canvas>
+        <br>
+        <script src="JS/domFunctions.js"></script>
+        <script src="JS/classes.js"></script>
+        <script src="JS/helperFunctions.js"></script>
+        <script src="JS/graphicsConstants.js"></script>
+        <script src="JS/graphicsFunctions.js"></script>
+        <script>
+            establishConstants();
+            let currPoints=new Points();
+            let currEdges= new Edges();
+            displayPointAndEdge();
+        </script>
+        <button id="randoPoints" onclick="CTX.clearRect(0,0,600, 500); currPoints.generateRandom(NUMPOINTS); currPoints.drawAndLabel(CTX);"> Randomize Point Locations</button>
+        <button id="consecutivePairs" onclick="currEdges.createPairedEdges(currPoints); currEdges.drawEdges(CTX); currEdges.labelEdges(CTX);"> Create ConsecutivePairs</button>
+        <button id="randomPairs" onclick="currEdges.createRandomEdges(currPoints); currEdges.drawEdges(CTX); currEdges.labelEdges(CTX); "> Create Random Pairs</button>
+        <button id="displayCoords" onclick="displayCoords(currPoints);">Display Coords</button>
+        <button id="saveCanvas" onclick="saveCanvas();">Save Current Graph</button>
+        <div id="coordDisplay"></div>
+
+        
+        
+    </body>
+</html>

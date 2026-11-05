@@ -1,0 +1,31 @@
+
+.myslides{
+    display:block !important; 
+}
+img{
+    display:block !important; 
+    width:100%;
+}
+.prev{
+    position: absolute; 
+    top: 50%;
+    transform: translateX(100%); 
+}
+.next{
+    position: absolute; 
+    top: 50%;
+    transform: translateX(8700%); 
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.text {
+    color: #221c1c;
+    font-size: 15px;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}

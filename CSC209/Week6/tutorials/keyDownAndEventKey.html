@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Events</h1>
+<h2>The keydown Event using Event Key</h2>
+
+<input id="k" type="text" placeholder="Press a key here!">
+
+<p id="demo"></p>
+
+<script>
+const k = document.getElementById("k");
+
+// Let k listen for keydown
+k.addEventListener("keydown", function (event) {
+  document.getElementById("demo").innerHTML = "You pressed: " + event.key;
+});
+</script>
+<h2>The keydown Event using Event Code</h2>
+<p>returns key code regardless of language setting, the one above matches capitalization this one doesn't.</p>
+
+<input id="b" type="text" placeholder="Press a key here!">
+
+<p id="demoTwo"></p>
+
+<script>
+const b = document.getElementById("b");
+
+// Let k listen for keydown
+b.addEventListener("keydown", function (event) {
+  document.getElementById("demoTwo").innerHTML = "You pressed: " + event.code;
+});
+</script>
+
+
+</body>
+</html>

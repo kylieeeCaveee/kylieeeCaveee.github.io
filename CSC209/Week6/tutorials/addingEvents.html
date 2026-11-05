@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Events</h1>
+<h2>Adding Events</h2>
+
+<button id="btn">Click</button>
+
+<p id="demo"></p>
+
+<script>
+const btn = document.getElementById("btn");
+
+// Let btn listen for click
+btn.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Clicked!";
+}
+</script>
+
+</body>
+</html>

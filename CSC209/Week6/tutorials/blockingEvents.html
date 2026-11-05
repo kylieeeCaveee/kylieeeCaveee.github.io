@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Events</h1>
+<h2>Blocking Events</h2>
+
+<a href="https://www.w3schools.com" id="link">Go to W3Schools</a>
+
+<p id="demo"></p>
+
+<script>
+const link = document.getElementById("link");
+
+// Let link listen for click
+link.addEventListener("click", function (event) {
+  event.preventDefault();
+  document.getElementById("demo").innerHTML = "Link blocked!";
+});
+</script>
+
+</body>
+</html>

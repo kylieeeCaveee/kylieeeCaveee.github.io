@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Events</h1>
+<h2>The load Event</h2>
+<p>Fires when entire page has loaded, best for actions that requires all resources avalible like getting dimenstions of an image, or chekcing browser type.</p>
+<p id="demo"></p>
+
+<script>
+// Add Event Listener to window
+window.addEventListener("load", function () {
+  document.getElementById("demo").innerHTML = "Page is fully loaded!";
+});
+</script>
+</body>
+</html>

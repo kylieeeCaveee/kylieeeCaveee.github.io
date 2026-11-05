@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script> 
+            const IMAGES=["checkmate.jpg", "jigsaw.jpeg", "obsessed.jpeg", "overdrive.jpeg", "saltInTheWound.png", "thePerfectPair.png"]; 
+            const TEMPLATE= '<img src="Imgs/FILENAME">';
+
+        </script>
+    </head>
+    <body> 
+        <p id="imgs"> 
+            <script>
+                let body="";
+                for(let x=0; x<IMAGES.length; x++){
+                    currLine= TEMPLATE.replace("FILENAME", IMAGES[x]);
+                    body= body+currLine;
+                }
+                document.getElementById("imgs").innerHTML=body;
+
+            </script>
+        </p>
+    </body>
+</html>

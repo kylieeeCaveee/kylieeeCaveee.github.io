@@ -1,0 +1,74 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    font-family:'Courier New', Courier, monospace;
+}
+html{
+    background-color: rgb(87, 87, 187);
+}
+header{
+    background-color: rgb(190, 190, 242);
+    color: rgb(1, 1, 52); 
+    font-family:'Courier New', Courier, monospace;
+    font-size:60px; 
+    text-align: center;
+    flex:1;
+}
+canvas{
+    background-color: white;
+    flex:3;
+    border: 2px dashed navy; 
+    border-radius: 15px;
+
+}
+footer{
+    background-color: rgb(190, 190, 242);
+    text-align: center;
+    padding:10px;
+    flex:1; 
+}
+#canvasAndButtons{
+    flex:3;
+    display: flex; 
+    flex-direction: row;
+    background-color: rgb(132, 132, 220);
+}
+#buttonMenu{
+    flex:1;
+    background-color: rgb(1, 1, 52);
+    text-align: center;
+    color:white; 
+    display:flex;
+    flex-direction: row;
+    
+}
+
+#graphControlTitle{
+    background-color: rgb(10, 10, 175);
+    padding:10px;
+    font-size: 20px; 
+}
+button{
+    background-color: lightblue;
+    border-radius: 8px;
+    padding: 10px;
+    margin:10px;
+    
+}
+#coordDisplay{
+    background-color: lightblue;
+    text-align: center;
+}
+
+#instructions{
+    text-align:center;
+    color: white; 
+    padding: 10px; 
+}
+
+

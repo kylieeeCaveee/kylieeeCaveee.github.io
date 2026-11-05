@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Events</h1>
+<h2>The DOMContentLoaded Event</h2>
+<p>Browser has fully loaded the html and built the dom but not neccessarily finished loading images, stylesheet etc. <br> good for intializing the user interface, attaching event handlers, and performing actions that only require the DOM to be ready</p>
+
+<p id="demo"></p>
+
+<script>
+// Add Event Listener to document
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("demo").innerHTML = "HTML is loaded!";
+});
+</script></body>
+</html>
